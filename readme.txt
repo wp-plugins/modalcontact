@@ -4,7 +4,7 @@ Donate link: http://www.barisatasoy.com/donate/
 Tags: contact, contact form, modal, ajax, plugin, jquery, javascript, mail, email,database
 Requires at least: ?
 Tested up to: 2.9.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 ModalContact is a database based contact form: it does use WP database for storage, instead of mailing form contents. 
 

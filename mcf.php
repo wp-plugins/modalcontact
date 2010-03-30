@@ -3,7 +3,7 @@
 Plugin Name: ModalContact (MCF)
 Plugin URI: http://www.barisatasoy.com/modalcontact/
 Description: Contact Form based on Eric Martin's awesome work, SMCF. The main difference is, ModalContact stores messages in a DB. If you have mail server problems, ModalContact will do the trick.
-Version: 1.0a
+Version: 1.1
 Author: Barış Atasoy
 Author URI: http://www.barisatasoy.com
 */
@@ -443,7 +443,7 @@ if ($ct<1)
 	$sql = "select name from ".$wpdb->prefix."messages";
 
 	//Create a PS_Pagination object
-	$pager = new PS_Pagination("$wpdb->prefix"."messages", 20, 3, 'page=modal-contact-form-smcf/mcf.php');
+	$pager = new PS_Pagination("$wpdb->prefix"."messages", 20, 3, 'page=modalcontact/mcf.php');
 	//The paginate() function returns a mysql
 	//result set for the current page
 	$rs = $pager->paginate();
@@ -454,7 +454,7 @@ if ($ct<1)
 
     ?>
 
-    <form method="post" action="<?php echo admin_url('admin.php?page=modal-contact-form-smcf/mcf.php') ?>">
+    <form method="post" action="<?php echo admin_url('admin.php?page=modalcontact/mcf.php') ?>">
     <table>
     <tr style='background-color:#B9C0C5'><td align='left' width='140'>Name</td><td align='left' width='180'>Email</td><td align='left' width='180'>Date</td><td align='left' width='40'>Read</td><td align='left' width='40'>Delete</td></tr>
     
